@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog | Prasanna Nadarajan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/frontend/styles/styles.css">
+    <link rel="stylesheet" href="/frontend/styles/main_blog_styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-logo"><span>Prasanna</span> Nadarajan</a>
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="index.html#home" class="navbar-link">Home</a></li>
+                <li class="navbar-item"><a href="index.html#about" class="navbar-link">About</a></li>
+                <li class="navbar-item"><a href="index.html#skills" class="navbar-link">Skills</a></li>
+                <li class="navbar-item"><a href="index.html#projects" class="navbar-link">Projects</a></li>
+                <li class="navbar-item"><a href="blog.html" class="navbar-link">Blog</a></li>
+                <li class="navbar-item"><a href="index.html#contact" class="navbar-link">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <header class="blog-header">
+        <div class="container">
+            <h1 class="blog-title">My Blog</h1>
+            <p class="blog-subtitle">Sharing my experiences, achievements, and journey through the world of technology.</p>
+        </div>
+    </header>
+
+    <!-- Blog Content -->
+    <section class="section">
+        <div class="container blog-container">
+            <div class="blog-posts">
+                <!-- Blog Post 1 -->
+                <article class="blog-post">
+                    <div class="blog-post-img">
+                        <img src="../images/billing_management_system_img.webp" alt="State-Level Hackathon">
+                    </div>
+                    <div class="blog-post-content">
+                        <span class="blog-post-date">April 15, 2023</span><br>
+                        <h2 class="blog-post-title">First Place at the REC Annual Hackathon</h2>
+                        <div class="blog-post-tags">
+                            <span class="blog-post-tag">Hackathon</span>
+                            <span class="blog-post-tag">IoT</span>
+                            <span class="blog-post-tag">Achievement</span>
+                        </div>
+                        <p class="blog-post-excerpt">
+                            I'm thrilled to share that our team secured first place at the REC Annual Hackathon! After 36 intense hours of coding, debugging, and very little sleep, we developed an innovative IoT solution for sustainable water management in agricultural settings.
+                        </p>
+                        <p class="blog-post-excerpt">
+                            Our project, "AquaSense," uses a network of low-cost sensors to monitor soil moisture levels, water quality, and weather conditions. The data is processed through our custom algorithms to optimize irrigation schedules, resulting in up to 30% water savings compared to traditional methods. The judges were particularly impressed with our implementation of machine learning to predict water needs based on historical patterns and real-time environmental data.
+                        </p>
+                        <a href="blog-post1.html" class="blog-post-readmore">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-post">
+                    <div class="blog-post-img">
+                        <img src="../images/billing_management_system_img.webp" alt="GDSC Workshop">
+                    </div>
+                    <div class="blog-post-content">
+                        <span class="blog-post-date">February 22, 2023</span><br>
+                        <h2 class="blog-post-title">Learning Firebase at the Google Developer Student Club Workshop</h2>
+                        <div class="blog-post-tags">
+                            <span class="blog-post-tag">Workshop</span>
+                            <span class="blog-post-tag">Android</span>
+                            <span class="blog-post-tag">Firebase</span>
+                        </div>
+                        <p class="blog-post-excerpt">
+                            This past weekend, I had the incredible opportunity to attend a two-day workshop organized by our college's Google Developer Student Club (GDSC). The focus was on Android application development with Firebase integration, and it was exactly what I needed to take my mobile development skills to the next level.
+                        </p>
+                        <p class="blog-post-excerpt">
+                            Day one covered the fundamentals of Android architecture and UI design using Jetpack Compose. We worked through several hands-on exercises, building progressively more complex interfaces and learning best practices for responsive design. The instructors were incredibly knowledgeable and patient, helping us troubleshoot issues as they arose.
+                        </p>
+                        <a href="blog-post2.html" class="blog-post-readmore">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-post">
+                    <div class="blog-post-img">
+                        <img src="../images/billing_management_system_img.webp" alt="Published Research Paper">
+                    </div>
+                    <div class="blog-post-content">
+                        <span class="blog-post-date">November 10, 2022</span><br>
+                        <h2 class="blog-post-title">My First Published Research Paper</h2>
+                        <div class="blog-post-tags">
+                            <span class="blog-post-tag">Research</span>
+                            <span class="blog-post-tag">Databases</span>
+                            <span class="blog-post-tag">Publication</span>
+                        </div>
+                        <p class="blog-post-excerpt">
+                            I'm excited to announce that my research paper, "Optimizing Database Performance in Web Applications," has been published in the International Journal of Engineering Research (IJER). This marks a significant milestone in my academic journey and represents months of hard work and collaboration with my professors and peers.
+                        </p>
+                        <p class="blog-post-excerpt">
+                            The paper explores various techniques for improving database performance in web applications, with a particular focus on query optimization, indexing strategies, and caching mechanisms. We conducted extensive benchmark tests using different database management systems under various load conditions to provide empirical evidence for our findings.
+                        </p>
+                        <a href="blog-post3.html" class="blog-post-readmore">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Blog Pagination -->
+                <div class="blog-pagination">
+                    <a href="#" class="page-link active">1</a>
+                    <a href="#" class="page-link">2</a>
+                    <a href="#" class="page-link">3</a>
+                    <a href="#" class="page-link"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Blog Sidebar -->
+            <aside class="blog-sidebar">
+                <!-- Categories Widget -->
+                <div class="sidebar-widget">
+                    <h3>Categories</h3>
+                    <ul class="category-list">
+                        <li><a href="#">Events <span class="category-count">5</span></a></li>
+                        <li><a href="#">Hackathons <span class="category-count">3</span></a></li>
+                        <li><a href="#">Workshops <span class="category-count">4</span></a></li>
+                        <li><a href="#">Certifications <span class="category-count">2</span></a></li>
+                        <li><a href="#">Projects <span class="category-count">6</span></a></li>
+                        <li><a href="#">Research <span class="category-count">1</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Recent Posts Widget -->
+                <div class="sidebar-widget">
+                    <h3>Recent Posts</h3>
+                    <ul class="recent-posts-list">
+                        <li><a href="#">First Place at the REC Annual Hackathon</a></li>
+                        <li><a href="#">Learning Firebase at the GDSC Workshop</a></li>
+                        <li><a href="#">My First Published Research Paper</a></li>
+                        <li><a href="#">AWS Cloud Practitioner Certification</a></li>
+                        <li><a href="#">Speaking at Tech Symposium 2022</a></li>
+                    </ul>
+                </div>
+
+                <!-- About Widget -->
+                <div class="sidebar-widget">
+                    <h3>About Me</h3>
+                    <p style="margin-bottom: 0;">I'm Prasanna, a software developer and engineering student passionate about building innovative solutions. This blog chronicles my journey through tech events, achievements, and experiences.</p>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/Prasanna-Nadrajan" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/Prasanna-Nadrajan" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/Prasanna_Nadrajan" class="social-link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com/Prasanna_Nadrajan" class="social-link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <ul class="footer-links">
+                <li><a href="index.html#home" class="footer-link">Home</a></li>
+                <li><a href="index.html#about" class="footer-link">About</a></li>
+                <li><a href="index.html#skills" class="footer-link">Skills</a></li>
+                <li><a href="index.html#projects" class="footer-link">Projects</a></li>
+                <li><a href="blog.html" class="footer-link">Blog</a></li>
+                <li><a href="index.html#contact" class="footer-link">Contact</a></li>
+            </ul>
+        </div>
+        <div class="container footer-text">
+            <p>&copy; 2023 Prasanna Nadarajan. All rights reserved.</p>
+            <p>Designed with ❤️ by Prasanna Nadarajan</p>
+        </div>
+    </footer>
+    <div class="scroll-top" id="scroll-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navbarMenu = document.querySelector('.navbar-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+        });
+        
+        // Scroll to top button
+        const scrollTopBtn = document.getElementById('scroll-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.add('active');
+            } else {
+                scrollTopBtn.classList.remove('active');
+            }
+        });
+        
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
