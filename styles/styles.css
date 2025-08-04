@@ -719,13 +719,33 @@ input:checked + .slider:before {
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden; /* Hide the scrollbar */
     gap: 2rem;
-    margin-top: 3rem;
+    padding-bottom: 1rem;
+    cursor: grab; /* Add this for a visual cue */
+    user-select: none; /* Prevents text selection during drag */
+}
+
+/* Add a style for when the user is dragging */
+.projects-grid.active {
+    cursor: grabbing;
+}
+
+/* Hide scrollbar for all browsers */
+.projects-grid::-webkit-scrollbar {
+    display: none;
+}
+.projects-grid {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .project-card {
+    flex-shrink: 0;
+    width: 320px; /* Or another desired fixed width */
+    scroll-snap-align: start;
     background-color: var(--bg-tertiary);
     border-radius: 15px;
     overflow: hidden;
