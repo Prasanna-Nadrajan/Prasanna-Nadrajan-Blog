@@ -1,7 +1,7 @@
         /* Blog-specific styles */
         .blog-header {
             padding: 8rem 0 4rem;
-            background: linear-gradient(135deg, #111111 0%, #222222 100%);
+            background: var(--hero-bg);
             text-align: center;
             position: relative;
         }
@@ -13,7 +13,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle, rgba(29, 205, 159, 0.15) 0%, rgba(18, 18, 18, 0) 70%);
+            background: var(--hero-overlay);
             z-index: 0;
         }
         
@@ -22,6 +22,7 @@
             z-index: 1;
             font-size: 3rem;
             margin-bottom: 1rem;
+            color: var(--text-primary);
         }
         
         .blog-subtitle {
@@ -31,6 +32,7 @@
             max-width: 700px;
             margin: 0 auto;
             opacity: 0.9;
+            color: var(--text-secondary);
         }
         
         .blog-container {

@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/frontend/styles/styles.css">
-    <link rel="stylesheet" href="/frontend/styles/main_blog_styles.css">
+    <link rel="stylesheet" href="../styles/main_blog_styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -21,8 +21,13 @@
                 <li class="navbar-item"><a href="index.html#about" class="navbar-link">About</a></li>
                 <li class="navbar-item"><a href="index.html#skills" class="navbar-link">Skills</a></li>
                 <li class="navbar-item"><a href="index.html#projects" class="navbar-link">Projects</a></li>
-                <li class="navbar-item"><a href="blog.html" class="navbar-link">Blog</a></li>
+                <li class="navbar-item"><a href="insights.html" class="navbar-link">Insights</a></li>
                 <li class="navbar-item"><a href="index.html#contact" class="navbar-link">Contact</a></li>
+                <li class="navbar-item">
+                    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </li>
             </ul>
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
@@ -45,14 +50,14 @@
                 <!-- Blog Post 1 -->
                 <article class="blog-post">
                     <div class="blog-post-img">
-                        <img src="../images/billing_management_system_img.webp" alt="State-Level Hackathon">
+                        <img src="../images/git_in_kadhai.png" alt="oru-git-in-kadhai">
                     </div>
                     <div class="blog-post-content">
-                        <span class="blog-post-date">April 15, 2023</span><br>
-                        <h2 class="blog-post-title">First Place at the REC Annual Hackathon</h2>
+                        <span class="blog-post-date">August 3, 2025</span><br>
+                        <h2 class="blog-post-title">2nd Runner up at Code Sapiens ORU-GIT-IN-KADHAI</h2>
                         <div class="blog-post-tags">
-                            <span class="blog-post-tag">Hackathon</span>
-                            <span class="blog-post-tag">IoT</span>
+                            <span class="blog-post-tag">Contest</span>
+                            <span class="blog-post-tag">AI</span>
                             <span class="blog-post-tag">Achievement</span>
                         </div>
                         <p class="blog-post-excerpt">
@@ -139,11 +144,11 @@
                 <div class="sidebar-widget">
                     <h3>Recent Posts</h3>
                     <ul class="recent-posts-list">
-                        <li><a href="#">First Place at the REC Annual Hackathon</a></li>
-                        <li><a href="#">Learning Firebase at the GDSC Workshop</a></li>
-                        <li><a href="#">My First Published Research Paper</a></li>
-                        <li><a href="#">AWS Cloud Practitioner Certification</a></li>
-                        <li><a href="#">Speaking at Tech Symposium 2022</a></li>
+                        <a href="#">2nd Runner up at Code Sapiens ORU-GIT-IN-KADHAI</a>
+                        <a href="#">Learning Firebase at the GDSC Workshop</a>
+                        <a href="#">My First Published Research Paper</a>
+                        <a href="#">AWS Cloud Practitioner Certification</a>
+                        <a href="#">Speaking at Tech Symposium 2022</a>
                     </ul>
                 </div>
 
@@ -158,8 +163,19 @@
 
     <!-- Footer -->
     <footer class="footer">
+        
+        <div class="footer-nav">
+            <ul class="footer-links">
+                <li><a href="index.html#home" class="footer-link">Home</a></li>
+                <li><a href="index.html#about" class="footer-link">About</a></li>
+                <li><a href="index.html#skills" class="footer-link">Skills</a></li>
+                <li><a href="index.html#projects" class="footer-link">Projects</a></li>
+                <li><a href="blog.html" class="footer-link">Blog</a></li>
+                <li><a href="index.html#contact" class="footer-link">Contact</a></li>
+            </ul>
+        </div>
         <div class="container">
-            <div class="social-links">
+            <div class="footer-social">
                 <a href="https://github.com/Prasanna-Nadrajan" class="social-link" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
@@ -174,16 +190,6 @@
                 </a>
             </div>
         </div>
-        <div class="footer-nav">
-            <ul class="footer-links">
-                <li><a href="index.html#home" class="footer-link">Home</a></li>
-                <li><a href="index.html#about" class="footer-link">About</a></li>
-                <li><a href="index.html#skills" class="footer-link">Skills</a></li>
-                <li><a href="index.html#projects" class="footer-link">Projects</a></li>
-                <li><a href="blog.html" class="footer-link">Blog</a></li>
-                <li><a href="index.html#contact" class="footer-link">Contact</a></li>
-            </ul>
-        </div>
         <div class="container footer-text">
             <p>&copy; 2023 Prasanna Nadarajan. All rights reserved.</p>
             <p>Designed with ❤️ by Prasanna Nadarajan</p>
@@ -193,33 +199,6 @@
         <i class="fas fa-chevron-up"></i>
     </div>
 
-    <!-- JavaScript -->
-    <script>
-        // Menu toggle
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navbarMenu = document.querySelector('.navbar-menu');
-        
-        menuToggle.addEventListener('click', () => {
-            navbarMenu.classList.toggle('active');
-        });
-        
-        // Scroll to top button
-        const scrollTopBtn = document.getElementById('scroll-top');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                scrollTopBtn.classList.add('active');
-            } else {
-                scrollTopBtn.classList.remove('active');
-            }
-        });
-        
-        scrollTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
+    <script src="../scripts/theme_toggle.js"></script>
 </body>
 </html>

@@ -21,7 +21,13 @@
                 <li class="navbar-item"><a href="#skills" class="navbar-link">Skills</a></li>
                 <li class="navbar-item"><a href="#projects" class="navbar-link">Projects</a></li>
                 <li class="navbar-item"><a href="blog.html" class="navbar-link">Blog</a></li>
+                <li class="navbar-item"><a href="insights.html" class="navbar-link">Insights</a></li>
                 <li class="navbar-item"><a href="#contact" class="navbar-link">Contact</a></li>
+                <li class="navbar-item">
+                    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </li>
             </ul>
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
@@ -37,7 +43,7 @@
             <p class="hero-description">
                 Passionate about building innovative solutions through code and exploring the cutting edge of technology.
             </p>
-            <a href="#contact" class="btn">Get In Touch</a>
+            <a href="#contact" class="hero-cta">Get In Touch</a>
         </div>
     </section>
 
@@ -111,7 +117,31 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="../images/billing_management_system_img.webp" alt="Billing Management System">
+                        <img src="../images/Ambulance_detection.png" alt="Ambulance_detection">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Ambulance Dectecting Traffic System</h3>
+                        <p class="project-desc">
+                            A comprehensive system built using Python libraries and with ML for managing traffic flow operations efficiently.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">ML</span>
+                            <span class="project-tag">Computer Vision</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Prasanna-Nadrajan/Billing_Management_System_Using_C/blob/main/README.md" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../images/billing_management.png" alt="Billing Management System">
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">Billing Management System</h3>
@@ -135,7 +165,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="../images/billing_management_system_img.webp" alt="Personal Blog">
+                        <img src="../images/blog.png" alt="Personal Blog">
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">Personal Blog</h3>
@@ -159,12 +189,12 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="../images/billing_management_system_img.webp" alt="Data Analysis Project">
+                        <img src="../images/loan_eligibilty.png" alt="Data Analysis Project">
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Data Analysis Project</h3>
+                        <h3 class="project-title">Loan Eligibility Detector</h3>
                         <p class="project-desc">
-                            Analysis of climate data using Python and visualization libraries.
+                            Analysis and prediction of loan eligibility using Python Machine learning (Random Forest) libraries.
                         </p>
                         <div class="project-tags">
                             <span class="project-tag">Python</span>
@@ -248,45 +278,46 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="social-links">
-                <a href="https://github.com/Prasanna-Nadrajan" class="social-link" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://linkedin.com/in/Prasanna-Nadrajan" class="social-link" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://twitter.com/Prasanna_Nadrajan" class="social-link" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://instagram.com/Prasanna_Nadrajan" class="social-link" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://facebook.com/Prasanna-Nadrajan" class="social-link" target="_blank">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.reddit.com/user/Prasanna_Nadrajan" class="social-link" target="_blank">
-                    <i class="fab fa-reddit-alien"></i>
-                </a>
-                <a href="https://www.quora.com/profile/Prasanna-Nadrajan" class="social-link" target="_blank">
-                    <i class="fab fa-quora"></i>
-                </a>
+            <div class="footer-links">
+                <a href="#home" class="footer-link">Home</a>
+                <a href="#about" class="footer-link">About</a>
+                <a href="#skills" class="footer-link">Skills</a>
+                <a href="#projects" class="footer-link">Projects</a>
+                <a href="blog.html" class="footer-link">Achievements</a>
+                <a href="#contact" class="footer-link">Contact</a>
             </div>
-        </div>
-            <div class="footer-nav">
-                <ul class="footer-links">
-                    <li><a href="#home" class="footer-link">Home</a></li>
-                    <li><a href="#about" class="footer-link">About</a></li>
-                    <li><a href="#skills" class="footer-link">Skills</a></li>
-                    <li><a href="#projects" class="footer-link">Projects</a></li>
-                    <li><a href="blog.html" class="footer-link">Achievements</a></li>
-                    <li><a href="#contact" class="footer-link">Contact</a></li>
-                </ul>
+            <div class="container">
+            
+                <div class="footer-social">
+                    <a href="https://github.com/Prasanna-Nadrajan" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/Prasanna-Nadrajan" class="social-link" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com/Prasanna_Nadrajan" class="social-link" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com/Prasanna_Nadrajan" class="social-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com/Prasanna-Nadrajan" class="social-link" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.reddit.com/user/Prasanna_Nadrajan" class="social-link" target="_blank">
+                        <i class="fab fa-reddit-alien"></i>
+                    </a>
+                    <a href="https://www.quora.com/profile/Prasanna-Nadrajan" class="social-link" target="_blank">
+                        <i class="fab fa-quora"></i>
+                    </a>
+                </div>
+                
             </div>
         <div class="container footer-text">
             <p>&copy; 2023 Prasanna Nadarajan. All rights reserved.</p>
             <p>Designed with ❤️ by Prasanna Nadarajan</p>
         </div>
     </footer>
+    <script src="../scripts/theme_toggle.js"></script>
 </body>
 </html>

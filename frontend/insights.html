@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasanna Nadarajan | Data Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <!-- Theme Switch -->
+    <div class="theme-switch-wrapper">
+        <i class="fas fa-moon theme-icon"></i>
+        <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+        <i class="fas fa-sun theme-icon"></i>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <a href="index.html" class="navbar-logo">Prasanna<span>Nadarajan</span></a>
+            <ul class="navbar-menu" id="navbar-menu">
+                <li class="navbar-item"><a href="index.html" class="navbar-link">Home</a></li>
+                <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
+                <li class="navbar-item"><a href="#skills" class="navbar-link">Skills</a></li>
+                <li class="navbar-item"><a href="#projects" class="navbar-link">Projects</a></li>
+                <li class="navbar-item"><a href="blog.html" class="navbar-link">Blog</a></li>
+                <li class="navbar-item"><a href="#contact" class="navbar-link">Contact</a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <header class="blog-header">
+        <div class="container">
+            <h1 class="blog-title">Data Science Insights</h1>
+            <p class="blog-subtitle">Exploring the world of data, machine learning, and AI through practical examples and in-depth analysis</p>
+        </div>
+    </header>
+
+    <!-- Blog Content -->
+    <section class="section">
+        <div class="container">
+            <div class="blog-container">
+                <div class="blog-posts">
+                    <!-- Blog Post 1 -->
+                    <div class="blog-post">
+                        <div class="blog-post-img">
+                            <img src="../images/time_series.png" alt="Time Series Forecasting">
+                        </div>
+                        <div class="blog-post-content">
+                            <span class="blog-post-date">May 5, 2025</span>
+                            <h2 class="blog-post-title">Advanced Time Series Forecasting with LSTM Networks</h2>
+                            <p class="blog-post-excerpt">Deep dive into implementing Long Short-Term Memory networks for accurate time series predictions. We'll explore preprocessing techniques, model architecture, and performance optimization strategies.</p>
+                            <div class="blog-post-tags">
+                                <span class="blog-post-tag">Deep Learning</span>
+                                <span class="blog-post-tag">Time Series</span>
+                                <span class="blog-post-tag">LSTM</span>
+                                <span class="blog-post-tag">Python</span>
+                            </div>
+                            <a href="blog-post.html" class="blog-post-readmore">Read Full Article</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog Post 2 -->
+                    <div class="blog-post">
+                        <div class="blog-post-img">
+                            <img src="../images/feature_engineering.png" alt="Feature Engineering">
+                        </div>
+                        <div class="blog-post-content">
+                            <span class="blog-post-date">April 28, 2025</span>
+                            <h2 class="blog-post-title">Feature Engineering Techniques That Boost Model Performance</h2>
+                            <p class="blog-post-excerpt">Discover how to create meaningful features from raw data that can dramatically improve your machine learning models. From numerical transformations to categorical encoding, learn practical techniques that work across domains.</p>
+                            <div class="blog-post-tags">
+                                <span class="blog-post-tag">Feature Engineering</span>
+                                <span class="blog-post-tag">Machine Learning</span>
+                                <span class="blog-post-tag">Data Preprocessing</span>
+                            </div>
+                            <a href="blog-post.html" class="blog-post-readmore">Read Full Article</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog Post 3 -->
+                    <div class="blog-post">
+                        <div class="blog-post-img">
+                            <img src="../images/sent_analysis.png" alt="Natural Language Processing">
+                        </div>
+                        <div class="blog-post-content">
+                            <span class="blog-post-date">April 15, 2025</span>
+                            <h2 class="blog-post-title">Building a Sentiment Analysis Pipeline with Transformers</h2>
+                            <p class="blog-post-excerpt">Learn how to implement a robust sentiment analysis system using state-of-the-art transformer models like BERT and RoBERTa. This tutorial covers data preparation, fine-tuning, evaluation, and deployment.</p>
+                            <div class="blog-post-tags">
+                                <span class="blog-post-tag">NLP</span>
+                                <span class="blog-post-tag">Transformers</span>
+                                <span class="blog-post-tag">BERT</span>
+                                <span class="blog-post-tag">Sentiment Analysis</span>
+                            </div>
+                            <a href="blog-post.html" class="blog-post-readmore">Read Full Article</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <div class="blog-pagination">
+                        <a href="#" class="page-link active">1</a>
+                        <a href="#" class="page-link">2</a>
+                        <a href="#" class="page-link">3</a>
+                        <a href="#" class="page-link"><i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Blog Sidebar -->
+                <div class="blog-sidebar">
+                    <!-- Categories Widget -->
+                    <div class="sidebar-widget">
+                        <h3>Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="#">Machine Learning <span class="category-count">12</span></a></li>
+                            <li><a href="#">Data Visualization <span class="category-count">8</span></a></li>
+                            <li><a href="#">Deep Learning <span class="category-count">15</span></a></li>
+                            <li><a href="#">Big Data <span class="category-count">6</span></a></li>
+                            <li><a href="#">Natural Language Processing <span class="category-count">9</span></a></li>
+                            <li><a href="#">Statistics <span class="category-count">7</span></a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Recent Posts Widget -->
+                    <div class="sidebar-widget">
+                        <h3>Recent Posts</h3>
+                        <ul class="recent-posts-list">
+                            <li><a href="#">Optimizing Hyperparameters with Bayesian Methods</a></li>
+                            <li><a href="#">Interpretable AI: Making Black Box Models Transparent</a></li>
+                            <li><a href="#">Data Ethics: Ensuring Fairness in Machine Learning</a></li>
+                            <li><a href="#">Building Recommender Systems at Scale</a></li>
+                            <li><a href="#">Computer Vision for Object Detection: A Practical Guide</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Data Insights Widget -->
+                    <div class="sidebar-widget">
+                        <h3>Blog Stats</h3>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <div class="insight-value">52</div>
+                                <div class="insight-label">Articles</div>
+                            </div>
+                            <div class="insight-item">
+                                <div class="insight-value">18k</div>
+                                <div class="insight-label">Readers</div>
+                            </div>
+                            <div class="insight-item">
+                                <div class="insight-value">142</div>
+                                <div class="insight-label">Comments</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Code Snippet -->
+    <section class="section" style="padding-top: 0">
+        <div class="container">
+            <div class="data-insights">
+                <h3 class="insights-title">Featured Code Snippet: Time Series Forecasting with LSTM</h3>
+                <div class="code-highlight">
+                    <div class="code-header">
+                        <div class="code-language">Python</div>
+                        <button class="code-copy-btn"><i class="fas fa-copy"></i> Copy</button>
+                    </div>
+                    <pre><code># Create and train an LSTM model for time series prediction
+import numpy as np
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import LSTM, Dense, Dropout
+
+# Prepare time series data (sequences)
+def create_sequences(data, seq_length):
+    xs, ys = [], []
+    for i in range(len(data) - seq_length):
+        x = data[i:i+seq_length]
+        y = data[i+seq_length]
+        xs.append(x)
+        ys.append(y)
+    return np.array(xs), np.array(ys)
+
+# Define model architecture
+def create_lstm_model(seq_length, n_features):
+    model = Sequential()
+    model.add(LSTM(64, activation='relu', input_shape=(seq_length, n_features),
+                  return_sequences=True))
+    model.add(Dropout(0.2))
+    model.add(LSTM(32, activation='relu'))
+    model.add(Dropout(0.2))
+    model.add(Dense(1))
+    model.compile(optimizer='adam', loss='mse')
+    return model
+
+# Prepare data, build and train model
+X_train, y_train = create_sequences(normalized_data, seq_length=30)
+model = create_lstm_model(30, n_features=1)
+history = model.fit(
+    X_train, y_train,
+    epochs=50,
+    batch_size=32,
+    validation_split=0.2,
+    callbacks=[
+        tf.keras.callbacks.EarlyStopping(patience=5, restore_best_weights=True)
+    ]
+)</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">Prasanna Nadarajan</div>
+            <p>Data Scientist | Machine Learning Engineer | Tech Blogger</p>
+            
+            <div class="footer-links">
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="#about" class="footer-link">About</a>
+                <a href="#skills" class="footer-link">Skills</a>
+                <a href="#projects" class="footer-link">Projects</a>
+                <a href="blog.html" class="footer-link">Blog</a>
+                <a href="#contact" class="footer-link">Contact</a>
+            </div>
+            
+            <div class="footer-social">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-medium"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-kaggle"></i></a>
+            </div>
+            
+            <div class="footer-copyright">
+                &copy; 2025 Prasanna Nadarajan. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+        
+        // Check for saved theme preference
+        if (localStorage.getItem('theme') === 'light') {
+            htmlElement.setAttribute('data-theme', 'light');
+            themeToggle.checked = true;
+        }
+        
+        // Toggle theme when switch is clicked
+        themeToggle.addEventListener('change', function() {
+            if (this.checked) {
+                htmlElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+            } else {
+                htmlElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Mobile menu toggle
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const navbarMenu = document.getElementById('navbar-menu');
+        
+        hamburgerMenu.addEventListener('click', function() {
+            navbarMenu.classList.toggle('active');
+        });
+        
+        // Code copy functionality
+        const copyButtons = document.querySelectorAll('.code-copy-btn');
+        
+        copyButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const codeBlock = this.parentElement.nextElementSibling.querySelector('code');
+                const textArea = document.createElement('textarea');
+                textArea.value = codeBlock.textContent;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                
+                // Change button text temporarily
+                const originalText = this.innerHTML;
+                this.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                setTimeout(() => {
+                    this.innerHTML = originalText;
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>
